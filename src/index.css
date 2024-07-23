@@ -1,13 +1,84 @@
-body {
+* {
+  box-sizing: border-box;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+.App {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.container-wrapper {
+  display: flex;
+  height: 100%;
+}
+
+.container {
+  flex: 1;
+  overflow: auto;
+  /* Ensures the BMI calculator takes up half of the screen or more */
+}
+
+.spline-container {
+  flex: 1;
+  position: relative;
+  height: 100%;
+}
+
+.spline-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+.App {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.container-wrapper {
+  display: flex;
+  height: 100%;
+}
+
+.container {
+  flex: 1;
+  overflow: auto;
+  /* Ensures the BMI calculator takes up half of the screen or more */
+}
+
+.spline-container {
+  flex: 1;
+  position: relative;
+  height: 100%;
+}
+
+.spline-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
 }
